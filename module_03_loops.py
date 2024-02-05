@@ -31,13 +31,37 @@ for i in range(-10, 0):
 
 
 # INPUT FUNCTION
+#name = input("What is your name?")
+#salary = float(input("What is your current salary?"))
 
-
-
-# print(f"Name: {name} \nSalary: ${salary:,.2f}")
+#print(f"Name: {name} \nSalary: ${salary:,.2f}")
 
 
 # WHILE LOOP
+"""
+favourite_number = 0
+while favourite_number != 100:
+    favourite_number = int(input("Enter your favorite number, 100 & up to quit: "))
+
+
+
+favorite_number = 0
+while favorite_number < 100:
+    favorite_number = int(input("Enter your favorite number, 100 & up to quit: "))
+else:
+    print("Your favorite number is too big!")
+
+
+favorite_number = 0
+while favorite_number < 100:
+    favorite_number = int(input("Enter your favorite number (but not 7), 100 to quit: "))
+    if favorite_number == 7:
+        print("You broke this game!")
+        break
+else:
+    print("Your favorite number is too big!")
+"""
+
 
 
 # LOOP CONTROL STATEMENTS
@@ -52,7 +76,7 @@ for number in range(1, 10):
 """
 
 #BREAK:
-"""
+
 # Use a for loop to iterate over the range of integers 
 for number in range(1, 10):
     # Use the break statement to exit the loop if the integer is greater than 5
@@ -60,11 +84,35 @@ for number in range(1, 10):
         break
     # Print all other integers.
     print(number)
-"""
+
 
 # INFINITE LOOP
 # <ctrl> + c (in the terminal window) to stop an infinite loop in VS Code.
+"""
+number = 10
+while number > 0:
+    number += 1
+    print(number)
+"""
+
+# to prevent the infinite loop
+"""
+number = 10
+while number > 0:
+    if number > 1000:
+        break
+    number += 1
+    print(number)
+"""
 
 
 # NESTED LOOP
 # matrix variable defined at top of editor.
+# for every iteration of outer loop, inner loop will execute in its entirety
+
+for row in matrix:
+    for element in row:
+        # end = ' ' overrides the line feed with a space
+        print(element, end= ' ')
+    # Use the empty print() function for line feed after row 
+    print()
