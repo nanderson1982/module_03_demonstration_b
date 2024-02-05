@@ -1,7 +1,7 @@
 """
 Description: Introduction to Loops
-Author: Student Name
-Date: September 2023
+Author: Nathan
+Date: February 2024
 Usage: To execute, press the play button in the VSC IDE.
 """
 
@@ -12,8 +12,27 @@ matrix = [[1, 2, 3],
           [7, 8, 9]]
 
 # FOR LOOP
+print(fruits)
+# iterate through a collection (list of fruit):
+for fruit in fruits:
+    print(fruit)
+
+for i in range(10):
+    print(i)
+
+for i in range(2, 8):
+    print(i)
+
+for i in range(1, 100, 6):
+    print(i)
+
+for i in range(-10, 0):
+    print(i)
+
 
 # INPUT FUNCTION
+
+
 
 # print(f"Name: {name} \nSalary: ${salary:,.2f}")
 

@@ -66,7 +66,7 @@ if age > 0 and sibling_age > 0:
 if age > 9 or sibling_age > 9:
     print("At least one value is greater than 9")
 
-if not age < 10:
+if not age < 20:
     print("age is not greater than 10.")
 
 
